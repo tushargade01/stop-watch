@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>stop watch</title>
+  <!--font for timer-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@500&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <!--icon-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div>
+    <div class="head-section">
+      <img src="./images/timer.png">
+      <p class="logo-name">Stop Watch</p>
+      <div class="hamb">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+    <ul class="nav-bar">
+      <li class="nav-box">
+        <a class="nav-name" href="">Home</a>
+      </li>
+      <li class="nav-box">
+        <a class="nav-name" href="">Stop Watch</a>
+      </li>
+      <li class="nav-box">
+        <a class="nav-name" href="">Count Down Timer</a>
+      </li>
+    </ul>
+    <main class="body-section">
+      <div>
+        <span class="css-timers" id="js-hour">00</span><span>:</span><span class="css-timers" id="js-min">00</span><span>:</span><span class="css-timers" id="js-sec">00</span>
+      </div>
+
+      <div class="button-section">
+        <button class="js-start" onclick=" settimer() ">Start</button>
+        <button class="js-stop" onclick="clockStop()">Stop</button>
+        <button class="js-tap" onclick="createTap();">Tap</button>
+        <button class="js-reset" onclick="clockReset()">Reset</button>
+      </div>
+
+       <div class="list-container">
+        <ol class="list">
+          
+        </ol>
+       </div>
+    </main>
+  <script src="./script.js"></script>
+</body>
+</html>
